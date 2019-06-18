@@ -28,7 +28,7 @@ attr_reader :id
   end
   
   def save
-    1. sql = <<-SQL
+     sql = <<-SQL
        INSERT INTO students (name, grade) 
        VALUES (?, ?)
      SQL
