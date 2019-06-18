@@ -14,7 +14,7 @@ attr_reader :id
 2.       CREATE TABLE IF NOT EXISTS students (
 3.         id INTEGER PRIMARY KEY, 
 4.         name TEXT, 
-5.         album TEXT
+5.         grade INTEGER
 6.         )
 7.         SQL
 8.     DB[:conn].execute(sql) 
