@@ -10,14 +10,14 @@ attr_reader :id
   end 
 
   def self.create_table
-    1.  sql =  <<-SQL 
-2.       CREATE TABLE IF NOT EXISTS students (
-3.         id INTEGER PRIMARY KEY, 
-4.         name TEXT, 
-5.         grade TEXT
-6.         )
-7.         SQL
-8.     DB[:conn].execute(sql) 
+      sql =  <<-SQL 
+       CREATE TABLE IF NOT EXISTS students (
+         id INTEGER PRIMARY KEY, 
+         name TEXT, 
+         grade TEXT
+         )
+         SQL
+     DB[:conn].execute(sql) 
   end
   
 end
